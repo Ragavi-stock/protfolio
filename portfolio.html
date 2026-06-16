@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ragavi — Developer Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="nav-logo">Ragavi<span>.</span>Kg</a>
+    <ul class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" class="btn-nav">Contact</a>
+    </ul>
+    <div class="nav-toggle" id="navToggle" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-bg-2"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span> Available for freelance work
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="highlight">Ragavi</span>
+        </h1>
+        <p class="hero-role">Frontend<span>Developer</span></p>
+        <p class="hero-desc">
+          I craft high-performance web applications and elegant user interfaces. Passionate about clean code, modern design, and delivering scalable digital solutions that make a difference.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Work →</a>
+          <a href="#contact" class="btn btn-outline">Let's Talk</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="stat-num">Fresher<span>+</span></div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div>
+            <div class="stat-num">3<span>+</span></div>
+            <div class="stat-label">Projects Shipped</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image-stack reveal">
+        <img class="about-img-main" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=500&fit=crop" alt="Developer workspace">
+        <div class="about-img-accent">
+          <div class="big-num">1</div>
+          <div class="caption">Years of<br>Coding</div>
+        </div>
+      </div>
+      <div class="about-text-col reveal">
+        <span class="section-label">About Me</span>
+        <h2 class="about-section-title">Turning ideas into<br><em>digital reality</em></h2>
+        <p class="about-text">
+          I'm a full-stack developer based on a strong passion for building intuitive web experiences. With a background in Computer Science and years of hands-on industry experience, I specialize in creating fast, scalable, and accessible applications.
+        </p>
+        <div class="about-tags">
+          <span class="tag">⚡ Fast Learner</span>
+          <span class="tag">🎨 Design-Minded</span>
+          <span class="tag">🤝 Team Player</span>
+          <span class="tag">🔍 Problem Solver</span>
+          <span class="tag">🚀 Performance-Focused</span>
+        </div>
+        <a href="#contact" class="btn btn-primary">Work With Me →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">My Toolkit</span>
+      <h2 class="section-title">Skills & Technologies</h2>
+      <p class="section-sub">Technologies and tools I work with to bring ideas to life.</p>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">🎨</div>
+        <h3>Frontend Development</h3>
+        <div class="skill-items">
+          <span class="skill-pill">HTML</span>
+          <span class="skill-pill">CSS</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">TypeScript</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">⚙️</div>
+        <h3>Backend Development</h3>
+        <div class="skill-items">
+          <span class="skill-pill">Node.js</span>
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">REST APIs</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">🛠️</div>
+        <h3>Tools & Platforms</h3>
+        <div class="skill-items">
+          <span class="skill-pill">Git</span>
+          <span class="skill-pill">GitHub</span>
+          <span class="skill-pill">VS Code</span>
+          <span class="skill-pill">Netlify</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">My Work</span>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-sub">A selection of projects I've built and shipped.</p>
+    </div>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card reveal">
+        <div class="project-img">
+          <div class="project-img-placeholder">🧪</div>
+          <div class="project-overlay">
+            <a href="https://smartquiz10.netlify.app/" class="project-link-btn" target="_blank">Live Demo</a>
+            <a href="https://github.com/Ragavi-stock/Quiz" class="project-link-btn" target="_blank">GitHub</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-num">Project 01</div>
+          <h3>Quiz App</h3>
+          <p>An interactive quiz application built with HTML, CSS, and JavaScript. Test your chemistry knowledge with various questions and get instant feedback.</p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card reveal">
+        <div class="project-img">
+          <div class="project-img-placeholder">📚</div>
+          <div class="project-overlay">
+            <a href="https://learnhub10.netlify.app/" class="project-link-btn" target="_blank">Live Demo</a>
+            <a href="https://github.com/Ragavi-stock/E-Learn" class="project-link-btn" target="_blank">GitHub</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-num">Project 02</div>
+          <h3>E-Learning Platform</h3>
+          <p>An interactive e-learning platform offering a wide range of courses for skill development and personal growth. Learn anytime, anywhere with expert-led lessons and assessments.</p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card reveal">
+        <div class="project-img">
+          <div class="project-img-placeholder">🌐</div>
+          <div class="project-overlay">
+            <a href="https://github.com/kumaranand3352-lang" class="project-link-btn" target="_blank">GitHub</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-num">Project 03</div>
+          <h3>Personal Web — EliteTech</h3>
+          <p>A personal portfolio website built during internship at EliteTech. Showcases projects, skills, and creative journey in tech, with a focus on continuous learning and building.</p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="reveal">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="contact-info" style="font-family:'Syne',sans-serif;font-size:clamp(1.8rem,2.5vw,2.4rem);font-weight:800;letter-spacing:-0.03em;margin-bottom:16px;color:var(--text);">Let's build something <span style="color:var(--yellow-2)">great</span> together</h2>
+        <p style="color:var(--text-muted);font-size:1rem;line-height:1.8;margin-bottom:36px;">Have a project in mind or want to collaborate? I'm currently available for freelance work and exciting opportunities. Drop me a message!</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-item-icon">📧</div>
+            <div>
+              <div class="contact-item-label">Email</div>
+              <div class="contact-item-value">Kgragavi25@gmail.com</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">📱</div>
+            <div>
+              <div class="contact-item-label">Phone</div>
+              <div class="contact-item-value">8190810920</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div>
+              <div class="contact-item-label">Location</div>
+              <div class="contact-item-value">Madurai</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form reveal">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="Ragavi">
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" placeholder="KG">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="Ragavi@example.com">
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell me about your project or how I can help..."></textarea>
+        </div>
+        <button class="form-submit">Send Message ✦</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-logo">Ragavi<span>.</span>Kg</div>
+    <p class="footer-copy">© 2026 Ragavi Made with <span class="footer-heart">♥</span></p>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
